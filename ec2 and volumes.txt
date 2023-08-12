@@ -1,0 +1,19 @@
+1.create a private subnet and connect it it to vpc and route table
+2.create a NAT gateway for it
+3.create an endpoint connect to it
+4.connect to endpoint
+5.create volume and attach it
+linux commands:
+lsblk -- to check the volumes
+
+sudo file -s /dev/xvdf   
+
+sudo mkfs -t ext4 /dev/xvdf  --- to create a filesystem
+
+sudo mkdir /newvolume--- to create a directory
+
+sudo mount /dev/xvdf /newvolume/
+
+cd /newvolume
+
+df -h 
